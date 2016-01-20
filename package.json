@@ -1,0 +1,9 @@
+{
+    "name": "euler-node",
+    "version": "0.0.1",
+    "description": "Problems of the Euler Project solved with Javascript in Node.js",
+    "author": "Max Buras <max@8uras.org>",
+    "scripts": {
+        "start": "node index.js"
+    }
+}
