@@ -1,1 +1,2 @@
-*.komdoproject
+*.komodoproject
+node_modules

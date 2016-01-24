@@ -5,5 +5,8 @@
     "author": "Max Buras <max@8uras.org>",
     "scripts": {
         "start": "node index.js"
+    },
+    "dependencies": {
+        "bignumber.js": "~2.1.4"
     }
 }
