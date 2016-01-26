@@ -15,6 +15,7 @@ problem.addSolution(function() {
     return (sum * sum) - qsum;
 });
 
+// "Clever solution"
 problem.addSolution(function() {
     var sum = limit * (limit + 1) / 2;
     var qsum = (2 * limit + 1) * (limit + 1) * limit / 6;
