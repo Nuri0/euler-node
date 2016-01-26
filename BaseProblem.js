@@ -1,6 +1,7 @@
 function BaseProblem(id) {
     this.id = id;
     this.solutions = [];
+    this.inputFile;
 }
 
 BaseProblem.prototype = {
@@ -12,6 +13,9 @@ BaseProblem.prototype = {
     },
     getSolutions: function() {
         return this.solutions;
+    },
+    setInputFile: function(file) {
+        this.inputFile = file;
     }
 }
 

@@ -5,7 +5,6 @@ var primes = require("../../common/primes.js")
 
 var limit = 10001;
 
-// "Brute Force"
 problem.addSolution(function() {
     
     var count = 1;
