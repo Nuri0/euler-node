@@ -1,11 +1,11 @@
 var path = require("path");
 
-var problemNumber = 15;
+var problemNumber = 16;
 var problemString = ("0000" + problemNumber).substr(-4,4);
 
 var problemPath = "./problems/" + problemString + "/" + problemString;
 var problem = require(problemPath);
-console.log(problem.getId())
+console.log("Problem: " + problem.getId())
 
 var iterations = 1;
 var solutions = problem.getSolutions();
