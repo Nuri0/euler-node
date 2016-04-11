@@ -7,6 +7,7 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "bignumber.js": "~2.1.4"
+        "bignumber.js": "~2.1.4",
+        "biginteger": "~1.0.3"
     }
 }
