@@ -1,5 +1,5 @@
 var BaseProblem = require("../../BaseProblem");
-var problem = new BaseProblem(22);
+var problem = new BaseProblem(23);
 
 var utils = require("../../common/utils");
 
