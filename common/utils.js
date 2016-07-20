@@ -27,9 +27,24 @@ var sumOfDivisors = function(n) {
 	return sum;
 }
 
+var isNPandigital = function(number, n) {
+	var string = "" + number;
+	for (var i=1; i<=n; i++) {
+		if (string.indexOf("" + i) == -1) {
+			return false;
+		}
+	}
+	
+	return true;
+}
+
 module.exports = {
 	sumOfDivisors: sumOfDivisors,
 	sumOfProperDivisors: function(n) {
 		return sumOfDivisors(n) - n;
+	},
+	isNPandigital: isNPandigital,
+	isPandigital: function(number) {
+		return isNPandigital(number,9);
 	}
 }
