@@ -1,6 +1,6 @@
 var path = require("path");
 
-var problemNumber = 36;
+var problemNumber = 37;
 var problemString = ("0000" + problemNumber).substr(-4,4);
 
 var problemPath = "./problems/" + problemString + "/" + problemString;
