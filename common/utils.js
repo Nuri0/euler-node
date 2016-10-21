@@ -46,5 +46,14 @@ module.exports = {
 	isNPandigital: isNPandigital,
 	isPandigital: function(number) {
 		return isNPandigital(number,9);
+	},
+	triangleNumber: function(n) {
+		return (n/2)*(n+1);
+	},
+	pentagonalNumber: function(n) {
+		return (n/2)*(3*n-1);
+	},
+	hexagonalNumber: function(n) {
+		return n*(2*n-1);
 	}
 }
