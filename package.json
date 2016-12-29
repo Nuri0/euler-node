@@ -4,10 +4,12 @@
     "description": "Problems of the Euler Project solved with Javascript in Node.js",
     "author": "Max Buras <max@8uras.org>",
     "scripts": {
-        "start": "node index.js"
+        "test": "node index.js",
+        "start": "electron main.js"
     },
     "dependencies": {
         "bignumber.js": "~2.1.4",
-        "biginteger": "~1.0.3"
+        "biginteger": "~1.0.3",
+        "electron": "~1.4.13"
     }
 }
