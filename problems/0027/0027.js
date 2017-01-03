@@ -1,4 +1,4 @@
-var BaseProblem = require("../../BaseProblem");
+var BaseProblem = require("../BaseProblem");
 var problem = new BaseProblem(27);
 var primes = require("../../common/primes");
 

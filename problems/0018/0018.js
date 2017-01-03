@@ -1,4 +1,4 @@
-var BaseProblem = require("../../BaseProblem");
+var BaseProblem = require("../BaseProblem");
 var problem = new BaseProblem(18);
 
 var fs = require("fs");

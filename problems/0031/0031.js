@@ -1,4 +1,4 @@
-var BaseProblem = require("../../BaseProblem");
+var BaseProblem = require("../BaseProblem");
 var problem = new BaseProblem(31);
 
 var amount = 200;

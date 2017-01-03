@@ -1,4 +1,4 @@
-var BaseProblem = require("../../BaseProblem");
+var BaseProblem = require("../BaseProblem");
 var problem = new BaseProblem(36);
 
 problem.addSolution(function() {
