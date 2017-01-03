@@ -1,5 +1,5 @@
 var BaseProblem = require("../../BaseProblem");
-var problem = new BaseProblem(8);
+var problem = new BaseProblem(11);
 
 problem.setInputFile("0011.txt");
 
