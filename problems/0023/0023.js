@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(23);
+var problem = new BaseProblem(23,"Non-abundant sums");
 
 var utils = require("../../common/utils");
 

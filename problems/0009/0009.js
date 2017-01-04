@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(9);
+var problem = new BaseProblem(9,"Special Pythagorean triplet");
 
 var s = 1000;
 

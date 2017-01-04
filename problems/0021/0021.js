@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(21);
+var problem = new BaseProblem(21,"Amicable numbers");
 
 problem.addSolution(function() {
 	var numbers = [];

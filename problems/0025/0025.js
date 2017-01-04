@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(25);
+var problem = new BaseProblem(25,"1000-digit Fibonacci number");
 
 var big = require("biginteger");
 

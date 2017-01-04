@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(36);
+var problem = new BaseProblem(36,"Double-base palindromes");
 
 problem.addSolution(function() {
 	

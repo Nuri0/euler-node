@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(14);
+var problem = new BaseProblem(14,"Longest Collatz sequence");
 
 problem.addSolution(function() {
 	// Brute force method (without cache)

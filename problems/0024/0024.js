@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(24);
+var problem = new BaseProblem(24,"Lexicographic permutations");
 
 problem.addSolution(function() {
 	var permutation = 999999;

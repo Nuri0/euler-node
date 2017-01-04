@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(15);
+var problem = new BaseProblem(15,"Lattice paths");
 
 var gridSize = 20;
 

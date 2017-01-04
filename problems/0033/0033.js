@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(33);
+var problem = new BaseProblem(33,"Digit cancelling fractions");
 
 problem.addSolution(function() {
 	

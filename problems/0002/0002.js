@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(2);
+var problem = new BaseProblem(2,"Even Fibonacci numbers");
 
 problem.addSolution(function() {
     var fib1 = 1;

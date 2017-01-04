@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(40);
+var problem = new BaseProblem(40,"Champernowne's constant");
 
 var positions = [1,10,100,1000,10000,100000,1000000];
 

@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(19);
+var problem = new BaseProblem(19,"Counting Sundays");
 
 problem.addSolution(function() {
     

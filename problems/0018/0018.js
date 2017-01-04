@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(18);
+var problem = new BaseProblem(18,"Maximum path sum I");
 
 var fs = require("fs");
 var path = require("path");

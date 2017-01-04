@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(13);
+var problem = new BaseProblem(13,"Large sum");
 
 var BigNumber = require("bignumber.js");
 

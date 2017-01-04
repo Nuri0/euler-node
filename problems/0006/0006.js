@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(6);
+var problem = new BaseProblem(6,"Sum square difference");
 
 var limit = 100;
 

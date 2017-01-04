@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(31);
+var problem = new BaseProblem(31,"Coin sums");
 
 var amount = 200;
 

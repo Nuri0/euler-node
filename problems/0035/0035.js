@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(35);
+var problem = new BaseProblem(35,"Circular primes");
 var primes = require("../../common/primes");
 
 problem.addSolution(function() {

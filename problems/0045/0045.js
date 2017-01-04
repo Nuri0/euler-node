@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(45);
+var problem = new BaseProblem(45,"Triangular, pentagonal, and hexagonal");
 var utils = require("../../common/utils");
 
 problem.addSolution(function() {

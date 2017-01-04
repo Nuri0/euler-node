@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(37);
+var problem = new BaseProblem(37,"Truncatable primes");
 
 var primes = require("../../common/primes");
 

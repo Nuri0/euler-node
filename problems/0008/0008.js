@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(8);
+var problem = new BaseProblem(8,"Largest product in a series");
 
 problem.setInputFile("0008.txt");
 

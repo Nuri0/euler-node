@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(1);
+var problem = new BaseProblem(1,"Multiples of 3 and 5");
 
 var sumDivisibleBy = function(goal, divisor) {
     var dividentCount = Math.floor(goal / divisor);

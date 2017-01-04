@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(39);
+var problem = new BaseProblem(39,"Integer right triangles");
 
 problem.addSolution(function() {
 	

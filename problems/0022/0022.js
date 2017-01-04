@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(22);
+var problem = new BaseProblem(22,"Names scores");
 
 var fs = require("fs");
 var path = require("path");

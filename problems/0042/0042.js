@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(42);
+var problem = new BaseProblem(42,"Coded triangle numbers");
 
 var maxWordLength = 0;
 

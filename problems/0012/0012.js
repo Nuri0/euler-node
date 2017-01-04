@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(12);
+var problem = new BaseProblem(12,"Highly divisible triangular number");
 
 var divisorLimit = 500;
 

@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(20);
+var problem = new BaseProblem(20,"Factorial digit sum");
 
 var BigInteger = require("biginteger");
 

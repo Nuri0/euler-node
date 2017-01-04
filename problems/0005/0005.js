@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(5);
+var problem = new BaseProblem(5,"Smallest Multiple");
 
 problem.addSolution(function() {
     

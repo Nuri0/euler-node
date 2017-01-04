@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(29);
+var problem = new BaseProblem(29,"Distinct powers");
 var big = require("biginteger");
 
 problem.addSolution(function() {

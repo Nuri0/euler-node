@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(3);
+var problem = new BaseProblem(3,"Largest prime factor");
 
 var Big = require("bignumber.js");
 

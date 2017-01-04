@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(38);
+var problem = new BaseProblem(38,"Pandigital multiples");
 
 var utils = require("../../common/utils");
 

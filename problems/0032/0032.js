@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(32);
+var problem = new BaseProblem(32,"Pandigital products");
 
 problem.addSolution(function() {
 	/*

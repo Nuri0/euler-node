@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(7);
+var problem = new BaseProblem(7,"10001st prime");
 
 var primes = require("../../common/primes.js")
 

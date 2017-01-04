@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(30);
+var problem = new BaseProblem(30,"Digit fifth powers");
 
 problem.addSolution(function() {
 	// precompute the fifth digit powers

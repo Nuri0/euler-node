@@ -1,7 +1,8 @@
-function BaseProblem(id) {
+function BaseProblem(id,name) {
     this.id = id;
     this.solutions = [];
     this.inputFile;
+    this.name = name;
 }
 
 BaseProblem.prototype = {
@@ -16,6 +17,9 @@ BaseProblem.prototype = {
     },
     setInputFile: function(file) {
         this.inputFile = file;
+    },
+    getName: function() {
+        return this.name;
     }
 }
 

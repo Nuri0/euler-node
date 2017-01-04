@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(27);
+var problem = new BaseProblem(27,"Quadratic primes");
 var primes = require("../../common/primes");
 
 problem.addSolution(function() {

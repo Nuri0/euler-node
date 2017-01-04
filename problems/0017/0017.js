@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(17);
+var problem = new BaseProblem(17,"Number letter counts");
 
 var numberLengths = require("./0017.json");
 

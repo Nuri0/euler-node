@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(10);
+var problem = new BaseProblem(10,"Summation of primes");
 
 var limit = 2000000;
 

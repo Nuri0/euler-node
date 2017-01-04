@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(26);
+var problem = new BaseProblem(26,"Reciprocal cycles");
 
 problem.addSolution(function() {
     var maxFraction = 1000;

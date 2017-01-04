@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(28);
+var problem = new BaseProblem(28,"Number spiral diagonals");
 
 problem.addSolution(function() {
     var sum = 1;

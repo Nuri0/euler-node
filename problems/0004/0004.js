@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(4);
+var problem = new BaseProblem(4,"Largest palindrome product");
 
 var reverse = function(n) {
     var reversed = 0;

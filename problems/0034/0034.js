@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(34);
+var problem = new BaseProblem(34,"Digit factorials");
 
 var factorials = [];
 

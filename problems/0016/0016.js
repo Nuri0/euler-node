@@ -1,5 +1,5 @@
 var BaseProblem = require("../BaseProblem");
-var problem = new BaseProblem(16);
+var problem = new BaseProblem(16,"Power digit sum");
 
 var power = 1000;
 
