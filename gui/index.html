@@ -5,14 +5,17 @@
         <title>Hello World</title>
         
         <script type="text/javascript" src="./assets/libs/angular-1.6.1.js"></script>
+        <script type="text/javascript" src="./assets/libs/angular-ui-router-0.3.2.js"></script>
         
         <script type="text/javascript" src="./app/app.module.js"></script>
+        <script type="text/javascript" src="./app/app.routes.js"></script>
+
+        <script type="text/javascript" src="./app/components/home/homeController.js"></script>
+        <script type="text/javascript" src="./app/components/problems/problemsController.js"></script>
     </head>
     <body ng-app="eulernodeFrontend" ng-controller="MainController">
-        <h1>Hello World</h1>
-        We are using node <script>document.write(process.versions.node)</script>, Chrome <script>document.write(process.versions.chrome)</script> and Electron <script>document.write(process.versions.electron)</script>
         
-        <p>
-			Output from AngularJS => {{test}}
-        </p>
+        <a ui-sref="home" ui-sref-active="active">Home</a>
+        <a ui-sref="problems" ui-sref-active="active">Problems</a>
+        <ui-view></ui-view>
 </html>
