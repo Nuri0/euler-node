@@ -1,4 +1,4 @@
-angular.module("eulernodeFrontend").controller("ProblemsController", function($scope) {
+angular.module("eulernodeFrontend").controller("ProblemListController", function($scope) {
     $scope.test = "Problems";
 
     const ipc = require("electron").ipcRenderer;

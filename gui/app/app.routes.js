@@ -8,8 +8,8 @@ angular.module("eulernodeFrontend").config(function($stateProvider) {
 	var problemState = {
 		"name": "problems",
 		"url": "/problems",
-		"templateUrl": "./app/components/problems/problemsView.html",
-        "controller": "ProblemsController"
+		"templateUrl": "./app/components/problemList/problemListView.html",
+        "controller": "ProblemListController"
 	}
 
 	$stateProvider.state(homeState);
