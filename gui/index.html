@@ -10,12 +10,14 @@
         <script type="text/javascript" src="./app/app.module.js"></script>
         <script type="text/javascript" src="./app/app.routes.js"></script>
 
+        <script type="text/javascript" src="./app/shared/problemService.js"></script>
         <script type="text/javascript" src="./app/components/home/homeController.js"></script>
         <script type="text/javascript" src="./app/components/problemList/problemListController.js"></script>
+        <script type="text/javascript" src="./app/components/problem/problemController.js"></script>
     </head>
     <body ng-app="eulernodeFrontend" ng-controller="MainController">
         
         <a ui-sref="home" ui-sref-active="active">Home</a>
-        <a ui-sref="problems" ui-sref-active="active">Problems</a>
+        <a ui-sref="problemList" ui-sref-active="active">Problems</a>
         <ui-view></ui-view>
 </html>

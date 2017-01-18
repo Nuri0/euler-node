@@ -23,6 +23,16 @@ function setup(ipcMain) {
         event.sender.send("listOfSolvedProblems",problems);
 
     });
+
+    ipcMain.on("runProblemSolution", (event, problemId, solutionId) => {
+
+        var problemString = ("0000" + problemId).substr(-4,4);
+        var problemPath = "./problems/" + problemString + "/" + problemString;
+        var problem = require(problemPath);
+        var result = problem.getSolutions()[solutionId]();
+
+        event.sender.send("getProblemSolution",result);
+    });
 }
 
 module.exports = setup;

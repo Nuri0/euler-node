@@ -5,7 +5,7 @@ Hello {{test}}
 <div>
     <ul>
         <li ng-repeat="i in problemList track by $index">
-           Problem {{i.id}} - {{i.name}}
+           Problem {{i.id}} - {{i.name}} - <a ui-sref="problem({'problemId':i.id})">Goto</a>
         </li>
     </ul>
 </div>

@@ -5,13 +5,20 @@ angular.module("eulernodeFrontend").config(function($stateProvider) {
 		"templateUrl": "./app/components/home/homeView.html",
         "controller": "HomeController"
 	}
-	var problemState = {
-		"name": "problems",
+	var problemListState = {
+		"name": "problemList",
 		"url": "/problems",
 		"templateUrl": "./app/components/problemList/problemListView.html",
         "controller": "ProblemListController"
 	}
+	var problemState = {
+		"name": "problem",
+		"url": "/problems/:problemId",
+		"templateUrl": "./app/components/problem/problemView.html",
+		"controller": "ProblemController"
+	}
 
 	$stateProvider.state(homeState);
+	$stateProvider.state(problemListState);
 	$stateProvider.state(problemState);
 })
