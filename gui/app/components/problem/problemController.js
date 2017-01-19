@@ -1,9 +1,9 @@
 angular.module("eulernodeFrontend").controller("ProblemController", function($stateParams, $scope, ProblemService) {
-    console.log($stateParams);
     
-    const ipc = require("electron").ipcRenderer;
+    var ipc = require("electron").ipcRenderer;
+    console.log(ipc);
 
-    $scope.problem = ProblemService.getProblem($stateParams.problemId);
+    $scope.problem = ProblemService.getProblemById($stateParams.problemId);
 
     $scope.runSolution = function(solutionId) {
         ipc.send("runProblemSolution",$scope.problem.id,solutionId);
@@ -11,5 +11,9 @@ angular.module("eulernodeFrontend").controller("ProblemController", function($st
 
 	ipc.on("getProblemSolution", function(event, result) {
 		console.log(result);
+	});
+	
+	$scope.$on("$destroy", function() {
+		ipc.removeAllListeners("getProblemSolution");
 	});
 });

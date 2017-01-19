@@ -3,7 +3,7 @@ angular.module("eulernodeFrontend").factory("ProblemService", function() {
     var problemList = [];
     var ipc = require("electron").ipcRenderer;
 
-    // Init stuff
+    // Get the list of all problems at the beginning of the program
     ipc.on("listOfSolvedProblems", function(event, args) {
 		problemList = args;
 	});
@@ -13,8 +13,10 @@ angular.module("eulernodeFrontend").factory("ProblemService", function() {
         getProblemList : function() {
             return problemList;
         },
-        getProblem : function(id) {
-            return problemList[id-1];
+        getProblemById : function(id) {
+			return problemList.filter(function(problem) {
+				return problem.id == id;
+			}).pop();
         }
     };
 });
