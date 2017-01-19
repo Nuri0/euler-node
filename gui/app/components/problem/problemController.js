@@ -1,7 +1,6 @@
 angular.module("eulernodeFrontend").controller("ProblemController", function($stateParams, $scope, ProblemService) {
     
     var ipc = require("electron").ipcRenderer;
-    console.log(ipc);
 
     $scope.problem = ProblemService.getProblemById($stateParams.problemId);
 
@@ -10,7 +9,9 @@ angular.module("eulernodeFrontend").controller("ProblemController", function($st
     }
 
 	ipc.on("getProblemSolution", function(event, result) {
-		console.log(result);
+		$scope.$apply(function() {
+			$scope.problemSolution = result;
+		});
 	});
 	
 	$scope.$on("$destroy", function() {

@@ -17,7 +17,11 @@
     </head>
     <body ng-app="eulernodeFrontend" ng-controller="MainController">
         
-        <a ui-sref="home" ui-sref-active="active">Home</a>
-        <a ui-sref="problemList" ui-sref-active="active">Problems</a>
-        <ui-view></ui-view>
+        <nav>
+			<a ui-sref="home" ui-sref-active="active">Home</a>
+			<a ui-sref="problemList" ui-sref-active="active">Problems</a>
+        </nav>
+        <div class="main">
+			<ui-view></ui-view>
+        </div>
 </html>
