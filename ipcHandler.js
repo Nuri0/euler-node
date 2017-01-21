@@ -1,5 +1,8 @@
 var fs = require("fs");
 var path = require("path");
+var isOnline = require("is-online");
+var https = require("https");
+var cheerio = require("cheerio");
 
 function setup(ipcMain) {
     // TODO implement
@@ -31,8 +34,36 @@ function setup(ipcMain) {
         var problem = require(problemPath);
         var result = problem.getSolutions()[solutionId]();
 
-        event.sender.send("getProblemSolution",result);
+        event.sender.send("problemSolution",result);
     });
+    
+    ipcMain.on("getProblemHtml", (event, problemId) => {
+
+		isOnline().then(online => {
+			if (online) {
+				
+				https.get("https://projecteuler.net/problem=255", function(res) {
+					var data = "";
+					res.on("data", function(chunk) {
+						data += chunk;
+					});
+					res.on("end", function() {
+						var $ = cheerio.load(data);
+
+						// adapt the urls for the images
+						var	images = $(".problem_content img");
+						images.attr("src", function(i, id) {
+							return path.join("https://projecteuler.net/",id);
+						});
+						
+						event.sender.send("problemHtml",$(".problem_content").html());
+					});
+				});
+				
+			}
+		});
+		
+	});
 }
 
 module.exports = setup;
