@@ -1,4 +1,4 @@
-angular.module("eulernodeFrontend").config(function($stateProvider) {
+angular.module("eulernodeFrontend").config(function($stateProvider,$urlRouterProvider) {
     var homeState = {
 		"name": "home",
 		"url": "/home",
@@ -21,4 +21,6 @@ angular.module("eulernodeFrontend").config(function($stateProvider) {
 	$stateProvider.state(homeState);
 	$stateProvider.state(problemListState);
 	$stateProvider.state(problemState);
+	
+	$urlRouterProvider.otherwise("/home");
 })

@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Hello World</title>
         
+        <link rel="stylesheet" href="./style.css">
+        
         <script type="text/javascript" src="./assets/libs/angular-1.6.1.js"></script>
         <script type="text/javascript" src="./assets/libs/angular-ui-router-0.3.2.js"></script>
         
@@ -16,12 +18,13 @@
         <script type="text/javascript" src="./app/components/problem/problemController.js"></script>
     </head>
     <body ng-app="eulernodeFrontend" ng-controller="MainController">
-        
-        <nav>
-			<a ui-sref="home" ui-sref-active="active">Home</a>
-			<a ui-sref="problemList" ui-sref-active="active">Problems</a>
-        </nav>
-        <div class="main">
+		<div id="header">
+			<nav>
+				<a ui-sref="home" ui-sref-active="active">Home</a>
+				<a ui-sref="problemList" ui-sref-active="active">Problems</a>
+			</nav>
+        </div>
+        <div id="main">
 			<ui-view></ui-view>
         </div>
 </html>

@@ -1,0 +1,64 @@
+body {
+	background-color: #fff;
+}
+
+#header {
+	height: 50px;
+}
+
+nav {
+	padding-top: 5px;
+}
+
+nav a {
+	padding: 5px;
+	color: #fff;
+	display: block;
+	background-color: #888;
+	width: 70px;
+	margin-right: 7px;
+	border: 1px solid #777;
+	float: left;
+	text-decoration: none;
+}
+
+nav a.active {
+	background-color: #ff9933;
+}
+
+nav a:hover {
+	background-color: #ff9933;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 15px;
+	max-width: 1000px;
+}
+
+h2 {
+	color: #6b4e3d;
+}
+
+h3 {
+	color: #666;
+}
+
+#problem_content {
+	font-size: 110%;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #aaa;
+	border-left: solid 1px #ddd;
+	border-right: solid 1px #aaa;
+	padding: 10px;
+}
+
+#problems_table {
+	border-collapse: collapse;
+	max-width: 800px;
+}
+
+#problems_table th, #problems_table td {
+	border: 1px solid #bbb;
+	padding: 2px;
+}
