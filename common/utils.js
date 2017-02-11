@@ -55,5 +55,11 @@ module.exports = {
 	},
 	hexagonalNumber: function(n) {
 		return n*(2*n-1);
+	},
+	permutation: function(n) {
+		if (n <= 1) {
+			return 1;
+		}
+		return n*this.permutation(n-1);
 	}
 }
