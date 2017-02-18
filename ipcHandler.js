@@ -37,12 +37,11 @@ function setup(ipcMain) {
         event.sender.send("problemSolution",result);
     });
     
-    ipcMain.on("getProblemHtml", (event, problemId) => {
+    ipcMain.on("getProblemHtml", (event, problem) => {
 
 		isOnline().then(online => {
 			if (online) {
-				
-				https.get("https://projecteuler.net/problem=255", function(res) {
+				https.get("https://projecteuler.net/problem="+problem.id, function(res) {
 					var data = "";
 					res.on("data", function(chunk) {
 						data += chunk;
