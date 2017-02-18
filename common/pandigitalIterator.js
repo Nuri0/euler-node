@@ -1,7 +1,5 @@
 function PandigitalIterator(from,to,ascending) {
 	this.numbers = [];
-	from = from || 1;
-	to = to || 9;
 	
 	for (var i=from; i<=to; i++) {
 		this.numbers.push(i);
